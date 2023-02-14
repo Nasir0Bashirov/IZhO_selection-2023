@@ -22,10 +22,8 @@ int main(){
             if(i - 4 >= 1){
                 dp[i][j] = max(dp[i][j], dp[i - 4][j - 1] + a[i]);
             }
-            //cout << i << " " << j << endl;
         }
     }
-    //cout << "here";
     for(int i = 1; i <= (n & 1 ? n / 2 + 1 : n / 2); i++){
         cout << dp[n][i] << endl;
     }
