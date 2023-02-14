@@ -19,9 +19,6 @@ int main(){
             if(i - 2 >= 1){
                 dp[i][j] = max(dp[i][j], dp[i - 2][j - 1] + a[i]);
             }
-            if(i - 4 >= 1){
-                dp[i][j] = max(dp[i][j], dp[i - 4][j - 1] + a[i]);
-            }
         }
     }
     for(int i = 1; i <= (n & 1 ? n / 2 + 1 : n / 2); i++){
